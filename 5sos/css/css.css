@@ -162,7 +162,7 @@ ul
 
 .navLink.Music
 {
-  background-image:url("../assets/music.jpg");
+  background-image:url("../assets/music.JPG");
   background-position: left top;
 } 
 .navLink:first-child 
@@ -171,17 +171,17 @@ ul
 }
 .navLink.Mixtape
 {
-  background-image:url("../assets/mixtape.jpg");
+  background-image:url("../assets/mixtape.JPG");
   background-position: left top;
 } 
 .navLink.Tours
 {
-  background-image:url("../assets/tours.jpg");
+  background-image:url("../assets/tours.JPG");
   background-position: left top;
 } 
 .navLink.About
 {
-  background-image:url("../assets/about.jpg");
+  background-image:url("../assets/about.JPG");
   background-position: left top;
 } 
 
