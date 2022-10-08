@@ -33,7 +33,7 @@ for(let i = 0; i < fill.length; i++) {
         });
         
         list.addEventListener('drop' function(e){
-            list.append(draggedItem);
+            this.append(draggedItem);
         });
     }
 }
