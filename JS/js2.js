@@ -10,7 +10,7 @@ for(let i = 0; i < fill.length; i++) {
         draggedItem = item;
         setTimeout(function () {
             item.style.display = 'none';
-        },0)
+        },0);
         
     });
     
@@ -19,7 +19,7 @@ for(let i = 0; i < fill.length; i++) {
             draggedItem.style.display = 'block';
             draggedItem = null;
         },0);
-    })
+    });
     
     
     for(let j = 0; j < empties.length; j++){
