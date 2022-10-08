@@ -1,7 +1,46 @@
-const fill = document.querySelector('.Fill');
+const fill = document.querySelectorAll('.Fill');
 const empties = document.querySelectorAll('.empty');
 
-//fill listeners
+let draggedItem = null;
+
+for(let i = 0; i < fill.length; i++) {
+    const item = fill[i];
+    
+    item.addEventListener('dragstart', function(){
+        draggedItem = item;
+        setTimeout(function () {
+            item.style.display = 'none';
+        },0);
+        
+    });
+    
+    item.addEventListener('dragend',function(){
+        setTimeout(function () {
+            draggedItem.style.display = 'block';
+            draggedItem = null;
+        },0);
+    });
+    
+    
+    for(let j = 0; j < empties.length; j++){
+        const list = empties[j];
+        
+        list.addEventListener('dragover' function(e){
+            e.preventDefault();
+        });
+        list.addEventListener('dragenter' function(e){
+            e.preventDefault();
+        });
+        
+        list.addEventListener('drop' function(e){
+            this.append(draggedItem);
+        });
+    }
+}
+
+
+
+/*fill listeners
 fill.addEventListener('dragstart',dragStart);
 fill.addEventListener('dragend',dragEnd);
 
@@ -46,7 +85,7 @@ function dragDrop()
     this.className='empty';
     this.append(fill);
     
-} 
+} */
 
 
 
