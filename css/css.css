@@ -304,6 +304,7 @@ ul
 
 .Fill
 {
+  display: inline-block;
   position: relative;
   height: 20px;
   width: 150px;
@@ -311,6 +312,7 @@ ul
   left: 5px;
   font-size: 1em;
   cursor: pointer;
+  background-color: #3cb371;
 
 }
 
