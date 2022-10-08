@@ -304,9 +304,7 @@ ul
 
 .Fill
 {
-  
-  display: inline-block;
-  /*position: relative;*/
+  position: relative;
   height: 20px;
   width: 150px;
   top: 5px;
