@@ -25,14 +25,14 @@ for(let i = 0; i < fill.length; i++) {
     for(let j = 0; j < empties.length; j++){
         const list = empties[j];
         
-        list.addEventListener('dragover' function(e){
+        list.addEventListener('dragover', function(e){
             e.preventDefault();
         });
-        list.addEventListener('dragenter' function(e){
+        list.addEventListener('dragenter', function(e){
             e.preventDefault();
         });
         
-        list.addEventListener('drop' function(e){
+        list.addEventListener('drop', function(e){
             list.append(draggedItem);
         });
     }
