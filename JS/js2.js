@@ -25,15 +25,15 @@ for(let i = 0; i < fill.length; i++) {
     for(let j = 0; j < empties.length; j++){
         const list = empties[j];
         
-        list.addEventListener('dragover' function(e){
+        list.addEventListener('dragover', function(e){
             e.preventDefault();
         });
-        list.addEventListener('dragenter' function(e){
+        list.addEventListener('dragenter', function(e){
             e.preventDefault();
         });
         
-        list.addEventListener('drop' function(e){
-            this.append(draggedItem);
+        list.addEventListener('drop', function(e){
+            list.append(draggedItem);
         });
     }
 }
@@ -48,7 +48,7 @@ fill.addEventListener('dragend',dragEnd);
 for(const empty of empties) 
 {
     empty.addEventListener('dragover',dragOver);
-    empty.addEventListener('dragnter',dragEnter);
+    empty.addEventListener('dragenter',dragEnter);
     empty.addEventListener('dragleave',dragLeave);
     empty.addEventListener('drop',dragDrop);
 }
